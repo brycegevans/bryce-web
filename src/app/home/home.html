@@ -1,0 +1,22 @@
+<section class="home-section" id="home">
+  <div class="home-content">
+    <div class="profile">
+      <img src="bryce.jpg" alt="Profile" class="profile-img" />
+      <h1 class="home-title">Hi, I'm Bryce 👋</h1>
+    </div>
+
+@if (rotatingMessage) {
+  <h2 class="home-subtitle">
+    {{ rotatingMessage }}
+  </h2>
+}
+
+    <p class="home-description">
+      I'm a software engineer with a passion for clean architecture, elegant interfaces, and solving real-world problems with code. Lately, I've been drawn to the impact of customer-facing roles — particularly Solutions Engineering — where I can blend technical expertise with communication and collaboration.
+    </p>
+    <p class="home-description">
+      I'm actively exploring both software engineering and solutions engineering opportunities — check out my projects and experience below.
+    </p>
+<a [routerLink]="['/home']" fragment="contact" class="home-button">Contact Me</a>
+  </div>
+</section>

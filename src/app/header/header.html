@@ -1,0 +1,19 @@
+<header class="main-header">
+  <div class="container">
+    <div class="logo-container">
+        <img src="favicon.ico" alt="My Icon" width="24" height="24" />
+      <div class="logo-text">Bryce Evans</div>
+    </div>
+
+    <!-- Mobile menu button -->
+    <button class="mobile-menu-toggle" (click)="toggleMobileMenu()">☰</button>
+
+    <!-- Navigation links -->
+    <nav class="nav-links" [ngClass]="{ 'open': mobileMenuOpen }">
+      <a [routerLink]="['/home']" fragment="projects" (click)="closeMenu()">Projects</a>
+      <a [routerLink]="['/home']" fragment="about" (click)="closeMenu()">About</a>
+      <a [routerLink]="['/home']" fragment="contact">Contact</a>
+
+    </nav>
+  </div>
+</header>

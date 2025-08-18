@@ -1,0 +1,117 @@
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 3rem 1.5rem;
+  background: linear-gradient(to right, #e0f7fa, #e1bee7);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.home-content {
+  max-width: 700px;
+  padding: 1rem;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.home-title {
+  font-size: 2.75rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+
+.home-subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #209CEE;
+  margin-bottom: 1rem;
+  transition: opacity 0.5s ease-in-out;
+  min-height: 2rem;
+opacity: 1;
+animation: fadeInOut 4s ease-in-out infinite;
+}
+
+
+.home-subtitle.ng-leave {
+  opacity: 0;
+}
+
+.cursor {
+  display: inline-block;
+  width: 1ch;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+.home-description {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+}
+
+.home-button {
+  text-decoration: none;
+  background-color: #209CEE;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.home-button:hover {
+  background-color: #007ACC;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .home-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .home-description {
+    font-size: 1rem;
+  }
+
+  .profile-img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  10%, 90% { opacity: 1; }
+}

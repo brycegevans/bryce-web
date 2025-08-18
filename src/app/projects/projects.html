@@ -1,0 +1,15 @@
+<section class="projects-section" id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card" *ngFor="let project of projects">
+      <div class="project-header">
+        <h3>{{ project.title }}</h3>
+        <span class="project-tag">{{ project.tag || 'Web App' }}</span>
+      </div>
+      <p>{{ project.description }}</p>
+      <a>
+        <i class="fas fa-external-link-alt"></i> View on GitHub
+      </a>
+    </div>
+  </div>
+</section>
