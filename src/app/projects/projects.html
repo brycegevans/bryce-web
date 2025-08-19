@@ -7,7 +7,7 @@
         <span class="project-tag">{{ project.tag || 'Web App' }}</span>
       </div>
       <p>{{ project.description }}</p>
-      <a>
+      <a [href]="project.link" target="_blank" rel="noopener noreferrer">
         <i class="fas fa-external-link-alt"></i> View on GitHub
       </a>
     </div>
